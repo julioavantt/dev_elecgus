@@ -134,7 +134,7 @@ main #banner {
 	img {
 		width: 300px;
 	}
-	h3 {
+	h2 {
 		font-size: 32px;
 		margin-bottom: 20px;
 		font-weight: bold;
@@ -150,15 +150,14 @@ main #banner {
 .contacto {
 	padding: 60px 20px;
 	text-align: center;
+	h2 {
+		font-size: 32px;
+		margin-bottom: 30px;
+		font-weight: bold;
+	}
 }
 
-.contacto h3 {
-	font-size: 32px;
-	margin-bottom: 30px;
-	font-weight: bold;
-}
-
-.formulario {
+.contacto .formulario {
 	max-width: 600px;
 	margin: 0 auto;
 	display: flex;
