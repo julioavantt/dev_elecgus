@@ -2,6 +2,7 @@
 	--color1: #fbb507;
 	--color2: #666;
 	--color3: #028389;
+	scroll-behavior: smooth;
 }
 
 * {
