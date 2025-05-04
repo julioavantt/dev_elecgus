@@ -124,6 +124,10 @@ main #banner {
 				width: 100%;
 				height: auto;
 				border-radius: 8px;
+				transition: all 0.3s;
+				&:hover {
+					filter: brightness(1.5);
+				}
 			}
 		}
 		.service__title {
