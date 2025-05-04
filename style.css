@@ -329,7 +329,7 @@ footer {
 	}
 
 	.services {
-		padding: 50px 30px;
+		padding: 60px 30px;
 		gap: 1.2rem;
 		.service__img-wrapper {
 			height: 140px !important;
