@@ -320,3 +320,19 @@ footer {
 		font-size: 1.1rem;
 	}
 }
+
+@media (max-width: 500px) {
+	header {
+		ul {
+			display: none !important;
+		}
+	}
+
+	.services {
+		padding: 50px 30px;
+		gap: 1.2rem;
+		.service__img-wrapper {
+			height: 140px !important;
+		}
+	}
+}
