@@ -183,19 +183,50 @@
 		</section>
 		<section id="contacto" class="contacto">
 			<h2>Contáctanos</h2>
-			<form class="formulario">
-				<input type="text" placeholder="Nombre" required />
+			<form
+				class="formulario"
+				role="form"
+				aria-labelledby="form-title"
+			>
+				<h2 id="form-title" hidden>Formulario de contacto</h2>
+				<label id="label-nombre" for="nombre">Nombre</label>
 				<input
-					type="email"
-					placeholder="Correo electrónico"
+					type="text"
+					id="nombre"
+					placeholder="Nombre"
+					aria-labelledby="label-nombre"
+					role="textbox"
 					required
 				/>
+				<label id="label-correo" for="correo"
+					>Correo electrónico</label
+				>
+				<input
+					type="email"
+					id="correo"
+					placeholder="Correo electrónico"
+					aria-labelledby="label-correo"
+					role="textbox"
+					required
+				/>
+
+				<label id="label-mensaje" for="mensaje">Tu mensaje</label>
 				<textarea
+					id="mensaje"
 					placeholder="Tu mensaje"
 					rows="4"
+					aria-labelledby="label-mensaje"
+					role="textbox"
 					required
 				></textarea>
-				<button type="submit">Enviar Mensaje</button>
+
+				<button
+					type="submit"
+					role="button"
+					aria-label="Enviar mensaje"
+				>
+					Enviar Mensaje
+				</button>
 			</form>
 		</section>
 		<footer>
