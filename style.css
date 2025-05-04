@@ -328,8 +328,12 @@ footer {
 		}
 	}
 
+	#banner a {
+		font-size: 1.2rem !important;
+	}
+
 	.services {
-		padding: 60px 30px;
+		padding: 60px 30px 20px;
 		gap: 1.2rem;
 		.service__img-wrapper {
 			height: 140px !important;
