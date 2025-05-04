@@ -87,6 +87,7 @@
 				>
 			</section>
 			<section id="services" class="services container">
+				<h2 hidden>Servicios</h2>
 				<article class="service">
 					<div class="service__img-wrapper">
 						<img
@@ -183,13 +184,10 @@
 		</section>
 		<section id="contacto" class="contacto">
 			<h2>Contáctanos</h2>
-			<form
-				class="formulario"
-				role="form"
-				aria-labelledby="form-title"
-			>
-				<h2 id="form-title" hidden>Formulario de contacto</h2>
-				<label id="label-nombre" for="nombre">Nombre</label>
+			<form class="form" role="form" aria-labelledby="form-title">
+				<label id="label-nombre" for="nombre" class="form__label"
+					>Nombre</label
+				>
 				<input
 					type="text"
 					id="nombre"
@@ -197,8 +195,10 @@
 					aria-labelledby="label-nombre"
 					role="textbox"
 					required
+					class="form__control"
 				/>
-				<label id="label-correo" for="correo"
+
+				<label id="label-correo" for="correo" class="form__label"
 					>Correo electrónico</label
 				>
 				<input
@@ -208,22 +208,29 @@
 					aria-labelledby="label-correo"
 					role="textbox"
 					required
+					class="form__control"
 				/>
 
-				<label id="label-mensaje" for="mensaje">Tu mensaje</label>
+				<label
+					id="label-mensaje"
+					for="mensaje"
+					class="form__label"
+					>Tu mensaje</label
+				>
 				<textarea
 					id="mensaje"
 					placeholder="Tu mensaje"
 					rows="4"
 					aria-labelledby="label-mensaje"
 					role="textbox"
+					class="form__control"
 					required
 				></textarea>
-
 				<button
 					type="submit"
 					role="button"
 					aria-label="Enviar mensaje"
+					class="form__btn"
 				>
 					Enviar Mensaje
 				</button>
