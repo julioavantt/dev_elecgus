@@ -1,7 +1,6 @@
 :root {
 	--color1: #fbb507;
 	--color2: #666;
-	--color3: #028389;
 	scroll-behavior: smooth;
 }
 
@@ -12,6 +11,10 @@
 	font-family: "Urbanist", sans-serif;
 	line-height: 1.6;
 	overflow-x: hidden;
+}
+
+body {
+	background-color: #f0f0f0;
 }
 
 .sr-only {
@@ -152,7 +155,7 @@ main #banner {
 }
 
 .nosotros {
-	background-color: #f0f0f0;
+	background-color: white;
 	padding: 60px 20px;
 	text-align: center;
 	margin-top: -100px;
@@ -172,9 +175,29 @@ main #banner {
 	}
 }
 
+.confiaron {
+	padding: 90px;
+	section {
+		padding: 0 20px;
+		display: flex;
+		gap: 10rem;
+		justify-content: space-between;
+		img {
+			flex: 1;
+			&:nth-child(1) {
+				flex: 0.8;
+			}
+			&:nth-child(2) {
+				flex: 0.8;
+			}
+		}
+	}
+}
+
 .contacto {
 	padding: 60px 20px;
 	text-align: center;
+	background-color: white;
 	h2 {
 		font-size: 32px;
 		margin-bottom: 30px;
@@ -200,10 +223,10 @@ main #banner {
 		font-size: 16px;
 	}
 	.form__btn {
-		background-color: var(--color3);
+		background-color: var(--color1);
 		padding: 12px 24px;
 		border: none;
-		color: white;
+		color: black;
 		font-weight: bold;
 		border-radius: 8px;
 		cursor: pointer;
@@ -230,17 +253,24 @@ footer {
 
 @media (max-width: 1600px) {
 	.container {
-		width: 1300px;
+		width: 1300px !important;
 	}
 
 	.services {
 		gap: 1.5rem 2rem;
 	}
+
+	.confiaron {
+		section {
+			padding: 0 50px;
+			gap: 8rem;
+		}
+	}
 }
 
 @media (max-width: 1350px) {
 	.container {
-		width: 1100px;
+		width: 1100px !important;
 	}
 
 	.services {
@@ -252,11 +282,17 @@ footer {
 			font-size: 1.2rem !important;
 		}
 	}
+
+	.confiaron {
+		section {
+			gap: 5rem;
+		}
+	}
 }
 
 @media (max-width: 1150px) {
 	.container {
-		width: 900px;
+		width: 900px !important;
 	}
 
 	#banner p {
@@ -275,11 +311,17 @@ footer {
 			font-size: 1.2rem !important;
 		}
 	}
+
+	.confiaron {
+		section {
+			gap: 4rem;
+		}
+	}
 }
 
 @media (max-width: 950px) {
 	.container {
-		width: 90%;
+		width: 90% !important;
 	}
 
 	#banner h1 {
@@ -304,6 +346,13 @@ footer {
 		}
 		p {
 			padding: 0 60px;
+		}
+	}
+
+	.confiaron {
+		section {
+			padding: 0;
+			gap: 4rem;
 		}
 	}
 }
@@ -345,6 +394,13 @@ footer {
 	.nosotros p {
 		font-size: 1.1rem;
 	}
+
+	.confiaron {
+		section {
+			padding: 0;
+			gap: 2rem;
+		}
+	}
 }
 
 @media (max-width: 500px) {
@@ -363,6 +419,17 @@ footer {
 		gap: 1.2rem;
 		.service__img-wrapper {
 			height: 140px !important;
+		}
+	}
+
+	.confiaron {
+		section {
+			padding: 0;
+			flex-direction: column;
+			gap: 3rem;
+			img {
+				width: 40%;
+			}
 		}
 	}
 }
