@@ -252,6 +252,22 @@ footer {
 	}
 }
 
+body {
+	background-color: red;
+}
+
+@media (max-width: 1600px) {
+	body {
+		background-color: orange;
+	}
+}
+
+@media (max-width: 1000px) {
+	body {
+		background-color: blue;
+	}
+}
+
 @media (max-width: 1600px) {
 	.container {
 		width: 1300px !important;
